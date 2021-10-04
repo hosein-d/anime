@@ -1,0 +1,32 @@
+body{
+
+}
+box{
+    background: dodgerblue;
+    width: 150px;
+    height: 150px;
+    transition: transform 0.5s 300ms linear, cubic-bezier(0,1.42,1,-0.67),background .3s .3s;
+}
+.box:hover{
+    transform: rotate(25deg);
+    transform-origin: 0 50%;
+    background: aqua;
+}
+@keyframes animation {
+    0% {
+        transform: rotate(0);
+    }
+
+    25%{
+        transform: rotate(25deg) translate(25px);
+    }
+    50%{
+        transform: rotate(50deg) translate(50px);
+    }
+    75%{
+         transform: rotate(-25deg) translate(-25px);
+     }
+    100%{
+        transform: rotate(25deg) translate(25px);
+    }
+}
